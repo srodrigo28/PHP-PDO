@@ -11,6 +11,8 @@
         $obVaga->ativo = $_POST['ativo'];
         $obVaga->cadastrar();
         
+        header('location: index.php?status=suceess');
+        exit;
         
     }
 

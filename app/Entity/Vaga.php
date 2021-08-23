@@ -22,7 +22,7 @@
 
             //INSERIR A VAGA NO BANCO PASSANDO O NOME DA TABELA
             $obDatabase = new Database('vagas');
-            $obDatabase->insert([
+            $this->id = $obDatabase->insert([
                 'titulo' => $this->titulo,
                 'descricao' => $this->descricao,
                 'ativo' => $this->ativo,
@@ -33,6 +33,7 @@
             //ATRIBUIR O ID DA VAGA INSTANCIA
 
             //RETORNAR SUCESSO || ERRO
+            return true;
 
         }
     }

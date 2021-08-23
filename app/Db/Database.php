@@ -26,9 +26,28 @@ class Database{
             die('ERROR: '.$e->getMessage());
         }
     }
+
+    public function execute($query,$params = []){
+        try{
+            $statement = $this->connection->prepare($query);
+            $statement->execute($params);
+            return $statement;
+        }catch(PDOException $e){
+            die('ERROR: '.$e->getMessage());
+        }
+    }
+
     public function insert($values){
-        $query = 'INSERT INTO '. $this->table .' (titulo,descricao,ativo,data) VALUES(?,?,?,?)';
-        echo $query; exit;
+        //DADOS DA QUERY fields
+        $fields = array_keys($values);
+        $binds = array_pad([],count($fields), '?' );
+        
+ //       echo "<pre>"; print_r($binds); echo "</pre>"; exit;
+
+        $query = 'INSERT INTO '. $this->table .' ('.implode(',',$fields). ') VALUES('.implode(',',$binds).')';
+        $this->execute($query,array_values($values));
+
+        return $this->connection->lastInsertId();
     }
 
 
