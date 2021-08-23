@@ -7,12 +7,16 @@
     * Composer
     * Bootstrap
 # Roteiro
-    * [ ] Criaremos o Banco de Dados
-    * [ ] Tabelas
-    * [ ] Estrutura de pastas
-    * [ ] Configuração do composer
-    * [ ] Usando o template Inicial Bootstrap
-    * [ ] Criar o Formulário de Cadastro
-    * [ ] Criando Pasta Entity e vaga.php
-    * [ ] Criando Pasta Db e Database.php
-    * [ ] Conexão com o banco
+    * [x] Criaremos o Banco de Dados
+    * [x] Tabelas
+    * [x] Estrutura de pastas
+    * [x] Configuração do composer
+    * [x] Usando o template Inicial Bootstrap
+    * [x] Criar o Formulário de Cadastro
+    * [x] Criando Pasta Entity e vaga.php
+    * [x] Criando Pasta Db e Database.php
+    * [x] Conexão com o banco
+    * [x] Inserir com Database Dinamico
+    * [x] Alterar
+    * [x] Excluir
+    * [ ] Falta passar as msn https://www.youtube.com/watch?v=uG64BgrlX7o&t=194s
