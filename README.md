@@ -9,4 +9,10 @@
 # Roteiro
     * [ ] Criaremos o Banco de Dados
     * [ ] Tabelas
+    * [ ] Estrutura de pastas
+    * [ ] Configuração do composer
+    * [ ] Usando o template Inicial Bootstrap
+    * [ ] Criar o Formulário de Cadastro
+    * [ ] Criando Pasta Entity e vaga.php
+    * [ ] Criando Pasta Db e Database.php
     * [ ] Conexão com o banco
